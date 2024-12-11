@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: BONITOS PAISAJES</title>
+    </head>
+    <body>
+    
+    <style>
+
+   body {background-color:lightblue;}
+   p{color:darkblue;}
+   h2{color:purple;}
+        .Maldivas{color:darkgreen;}
+        li {color:brown;}
+    </style>
+        <h1>Viaje a  <strong class="Maldivas">Maldivas</strong></h1>
+        <h2>¿Dónde está?</h2>
+        <p>Es un <strong>archipiélago</strong> situado en el Océano Índico al <em>sudoeste de Sri Lanka e India</em>, constituido por <strong>1192 islas coralinas</strong>, de las que sólo 203 están habitadas, y agrupadas en una doble cadena de 26 atolones.</p>
+        
+        <h2>Itinerario</h2>
+        
+        <ul>
+            <li>Desayuno acuático
+        
+            <li>Buceo con delfines
+            <li>Recoger cocos
+            <li>Dormir a la interperie
+            
+        </ul>
+       
+        
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Kaafu_Atoll%2C_Maldives_-_panoramio_%2814%29.jpg"width="203">
+        <p>Viajar a las islas  <strong class="Maldivas">Maldivas</strong> es una experiencia única que puedes ajustar a tus posibilidades. Puedes pasar unos días en este maravilloso destino por un coste a partir de los 1.500 euros, si pillas temporada baja y alguna oferta. La media son 2.500€ por persona.</p>
+        <h2>Animales más famosos</h2>
+        <ol>
+            <li>Pez Cocodrilo 
+            <li>Pez Trompeta
+            <li>Tortuga Carey
+        </ol>
+       
+    </body>
+</html>
