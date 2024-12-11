@@ -22,7 +22,7 @@ var numero1 = prompt ("Escribe tu numero favorito");
 
    body {background-color:lightblue;}
    p{color:darkblue;}
-   h2{color:purple;}
+   h2{color:maroon;}
         .Maldivas{color:darkgreen;}
         li {color:brown;}
     </style>
