@@ -1,11 +1,11 @@
 <html>
     <head>
-        <title>MI NOVENA PÁGINA</title> 
+        <title>MI OCTAVA PÁGINA</title> 
         <link rel="stylesheet" href="estilo.css">
     </head>
     <body>    
    
-        <h1> SERIE DE FIBONACCI </h1>
+        <h1> PÁGINA PARA SUMAR TODOS LOS NÚMEROS ENTRE OTROS</h1>
           <script>
             document.write ("<br>");
             document.write ("<br>");
@@ -19,20 +19,17 @@
             }
                      
           
-            function fibo(number){
-  let a=0,b=1,c,s=1;
-  console.log(a,b);
-  for(i = 3; i<=number;i++){
-    c=a+b;
-    console.log(c);
-    s = s +c;
-    a =b;
-    b=c;
-  }
-}
+            var suma = 0; 
+            var i = 1;
 
-fibo(prompt())
-          
+           
+            for (i = 1; i <= numero; i++) {
+            suma = suma + i;
+            document.write ("<br>La suma de todos los numeros introducidos entre 1 y " + i + " es: " + suma);
+            }
+
+           
+            document.write ("<br><br>La suma TOTAL de todos los numeros introducidos entre 1 y " + numero + " es: " + suma);
           </script>
 </body>
 </html>
