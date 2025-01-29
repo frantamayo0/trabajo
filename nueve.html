@@ -11,27 +11,23 @@
             document.write ("<br>");
             var numero =  prompt("Introduce un número entre 1 y 100:"); 
             numero = Number(numero); 
-
            
             while (numero < 1 || numero > 100) {
             numero = prompt("Número inválido. Introduce un número entre 1 y 100:");
             numero = Number (numero); // Convertimos el texto a numero
             }
-                     
-          
+                 
+         
             var a = 0; 
             var b = 1;
-
            
             for (i = 1; i <= numero; i++) {
                 c = a + b;
                 document.write ("<br>La la serie de Fibonacci "+c);
                 a = b;
                 b = c;
-          
-           
+             
             }
-
            
                 document.write ("<br>La la serie de Fibonacci "+c);
           </script>
