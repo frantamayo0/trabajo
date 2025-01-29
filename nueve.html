@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>MI NOVENA PÁGINA</title> 
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>    
+   
+        <h1> SERIE DE FIBONACCI </h1>
+          <script>
+            document.write ("<br>");
+            document.write ("<br>");
+            var numero =  prompt("Introduce un número entre 1 y 100:"); 
+            numero = Number(numero); 
+
+           
+            while (numero < 1 || numero > 100) {
+            numero = prompt("Número inválido. Introduce un número entre 1 y 100:");
+            numero = Number (numero); // Convertimos el texto a numero
+            }
+                     
+          
+            var suma = 0; 
+            var i = 1;
+
+           
+            for (i = 1; i <= numero; i++) {
+            suma = suma + i;
+        function fib(n) {
+  let a = 1;
+  let b = 1;
+  for (let i = 3; i <= n; i++) {
+    let c = a + b;
+    a = b;
+    b = c;
+  }
+  return b;
+}
+
+alert( fib(3) ); // 2
+alert( fib(7) ); // 13
+alert( fib(77) ); // 5527939700884757);
+            }
+
+           
+          
+          </script>
+</body>
+</html>
