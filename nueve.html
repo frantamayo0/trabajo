@@ -25,21 +25,19 @@
            
             for (i = 1; i <= numero; i++) {
             suma = suma + i;
-        function fib(n) {
-  let a = 1;
-  let b = 1;
-  for (let i = 3; i <= n; i++) {
-    let c = a + b;
-    a = b;
-    b = c;
+function fibo(number){
+  let a=0,b=1,c,s=1;
+  console.log(a,b);
+  for(i = 3; i<=number;i++){
+    c=a+b;
+    console.log(c);
+    s = s +c;
+    a =b;
+    b=c;
   }
-  return b;
 }
 
-alert( fib(3) ); // 2
-alert( fib(7) ); // 13
-alert( fib(77) ); // 5527939700884757);
-            }
+fibo(prompt())
 
            
           
