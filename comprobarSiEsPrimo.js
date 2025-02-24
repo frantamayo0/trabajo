@@ -8,7 +8,7 @@ function comprobarEsPrimo (numero)
         if ( numero % i ==0 )
         {
           esPrimo = false;
-          return esPrimo
+          return esPrimo;
         }  
       }
     esPrimo = true
