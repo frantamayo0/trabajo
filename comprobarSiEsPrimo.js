@@ -11,6 +11,6 @@ function comprobarEsPrimo (numero)
           return esPrimo;
         }  
       }
-    esPrimo = true
+    esPrimo = true;
     return esPrimo;
   }
