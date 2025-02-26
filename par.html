@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>pagina para comprobar tu destino</title>  
+  </head>
+  <body>
+      <script src="pedirNumero.js"></script>
+    <script src="comprobarSiEsPar.js"> </script>
+    <script>
+      var numero;
+  numero = pedirNumero (2,777);
+    document.write("<h1> mi pagina web para calcular si " +numero+ " es un numero primo </h1>");
+      var primo;
+      primo = comprobarSiEsPar(numero);
+      if ( primo == true )
+      {
+        document.write (numero + " es un numero par.");
+      }
+      else
+      {
+        document.write(numero + " es un numero impar.");
+      }
+    </script>
+   
+  </body>
+</html>
