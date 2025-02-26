@@ -1,17 +1,16 @@
 function comprobarSiEsPar(numero)
   {
-    var primo;
-    var i;
+    var par;
+    var i = 2; 
+    if ( numero % i == 0 )
+            {
+            par = true;
+            return par;
+            }
+    else 
+          {
+           par = false;
+           return par;
+          }
    
-for(i=numero-1; i>=2; i=i-1 )
-{
-if ( numero % i == 0 )
-{
-  primo = false;
-  return primo;
-}
- 
-}
-    primo = true;
-    return primo;
   }
