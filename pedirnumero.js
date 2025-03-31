@@ -15,5 +15,5 @@ function pedirNumeroEnRangoMejorado (texto,min,max)
        numero = prompt(texto + min +" y " + max + ":");
        numero = Number(numero)
        } while (numero < min 
-      
+    return numero;  
 }
