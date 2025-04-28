@@ -87,14 +87,14 @@
              numero = Number(numero);
             // Referencia al elemento donde mostraremos el mensaje
             mensajeDiv = document.getElementById('mensaje');
-
+            esPrimo = comprobarEsPrimo(numero);
             // Si el usuario escribió algo, saludamos
-            if (nombre) {
-                mensajeDiv.textContent = ("¡Hola, " + nombre + "! ¡Bienvenido a clase! 👋");
+            if (esPrimo) {
+                mensajeDiv.textContent = (" El " + numero + " es primo ");
             } 
-            // Si el campo está vacío, le pedimos que escriba su nombre
+   
             else {
-                mensajeDiv.textContent = ("¡Dime tú nombre para saludarte 😊!");
+                mensajeDiv.textContent = (" El " + numero + " no es primo ");
             }
         });
     </script>
