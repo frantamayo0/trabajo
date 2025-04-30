@@ -89,12 +89,17 @@
             mensajeDiv = document.getElementById('mensaje');
             esPrimo = comprobarEsPrimo(numero);
             // Si el usuario escribió algo, saludamos
+            if (numero<2) {
+                mensajeDiv.textContent = ("Introduce un número válido");
+                          }
+            else {
             if (esPrimo) {
                 mensajeDiv.textContent = (" El " + numero + " es primo ");
             } 
    
             else {
                 mensajeDiv.textContent = (" El " + numero + " no es primo ");
+            }
             }
         });
     </script>
