@@ -1,32 +1,89 @@
 <html>
   <head>
     <title> PAGINA con ejemplos de objetos en JAVASCRIPT</title>
+
+   
+    <style>
+        .ejemplo {
+            border: 1px solid #ccc;  
+            padding: 20px;          
+            margin: 20px;            
+            border-radius: 10px;  
+        }
+       
+        button {
+            background-color: #4CAF50;
+            color: white;        
+            padding: 10px;      
+            border: none;
+            cursor: pointer;        
+            margin: 5px;          
+        }
+       
+        .resultado {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin: 10px 0;        
+        }
+    </style>
   </head>
   <body>
-    <h2> MI PRIMER OBJETO:</h2>
-    <buttom onclick="persona.saludar8)"> SALUDAR</buttom>
-    <BUTTOM> SALUDAR</BUTTOM>
-    <div id="resultado-persona">
+    <h1>Ejemplos de Objetos en JavaScript</h1>
+
+    <div class="ejemplo">
+        <h2>1. Objeto Persona</h2>
+        <button onclick="persona.saludar()">Saludar</button>
+        <div id="resultado-persona" class="resultado"></div>
+    </div>
+
+    <div class="ejemplo">
+        <h2>2. Objeto Coche</h2>
+        <button onclick="manejarCoche('encender')">Encender</button>
+        <button onclick="manejarCoche('apagar')">Apagar</button>
+        <div id="resultado-coche" class="resultado"></div>
+    </div>
+   
+
     <script>
-      const persona = 
-        {
-          nombre: "FRAN",
-          edad: 17,
-          Ciudad: "Almería",
-          zodiaco: "capricornio",
-          Equipo: "Real Madrid",
-          serie: "El Internado",
-            saludar () {
-              console.log ("Hola a todos");
-                       }
-              
+        const persona = {
+            nombre: "Francisco",
+            edad: 17,
+            ciudad: "Almeria",
+           
+            saludar() {
+                const output = document.getElementById('resultado-persona');
+                output.innerHTML = `Hola, soy ${this.nombre} y tengo ${this.edad} años.`;
+            }
         };
-      console.log(persona.nombre);
-      console.log(persona.edad);
-      console.log(persona.Ciudad);
-      console.log(persona.zodiaco);
-      console.log(persona.Equipo);
-      console.log(persona.serie);
+
+        const coche = {
+            marca: "Toyota",
+            modelo: "Corolla",
+            año: 2020,
+            encendido: false,
+       
+            encender() {
+                if (!this.encendido) {
+                    this.encendido = true;
+                    return "El coche se ha encendido.";
+                }
+                return "El coche ya está encendido.";
+            },
+           
+           
+            apagar() {
+                if (this.encendido) {
+                    this.encendido = false;
+                    return "El coche se ha apagado.";
+                }
+                return "El coche ya está apagado.";
+            }
+        };
+
+        function manejarCoche(accion) {
+            const output = document.getElementById('resultado-coche');
+            output.innerHTML = coche[accion]();
+        }
     </script>
-  </body>
+</body>
 </html>
